@@ -1,5 +1,5 @@
 const Menu = () => {
-  return <div>Menu</div>;
+  return <div className="flex min-h-screen flex-col items-center ">Menu</div>;
 };
 
 export default Menu;

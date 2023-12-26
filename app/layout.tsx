@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={quattrocento_sans.className}>{children}</body>
+      <body className={`${quattrocento_sans.className} text-lg`}>
+        {children}
+      </body>
     </html>
   );
 }
