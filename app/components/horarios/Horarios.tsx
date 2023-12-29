@@ -4,15 +4,18 @@ import { motion } from "framer-motion";
 
 const Horarios = () => {
   return (
-    <div className="relative min-h-[60vh] w-full">
+    <div
+      className="relative flex min-h-[70vh] w-full items-center justify-center p-8"
+      id="reserva"
+    >
       <svg
         id="visual"
-        viewBox="0 0 540 960"
+        viewBox="0 0 540 1360"
         width="540"
         height="960"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        className="absolute inset-0 -z-10 w-full object-cover"
+        className="absolute inset-0 -z-10 w-full object-fill"
       >
         <filter id="blurMe">
           <feGaussianBlur stdDeviation="7" />
@@ -26,8 +29,9 @@ const Horarios = () => {
           <circle r="115" cx="347" cy="602" filter="url(#blurMe)"></circle>
         </g>
       </svg>
+
       <motion.div
-        className="relative flex w-full flex-col items-center"
+        className="ju relative flex w-full flex-col items-center"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}

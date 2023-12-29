@@ -1,12 +1,11 @@
+// import Navbar from "./components/Navbar";
 import Eventos from "./components/eventos/Eventos";
 import Heading from "./components/heading/Heading";
 import Horarios from "./components/horarios/Horarios";
-import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center ">
-      <Navbar />
+    <main className="relative flex min-h-screen flex-col items-center">
       <Heading />
       <Horarios />
       <Eventos />
@@ -26,6 +25,16 @@ export default function Home() {
        * Horarios
        * Ver menu
        */}
+      {/* VIDEO */}
+      {/* <video
+        className="absolute inset-0 -z-10 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+      >
+        <source src="../video-mercat-exotic.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> */}
     </main>
   );
 }
